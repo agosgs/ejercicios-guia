@@ -1,4 +1,4 @@
-package com.learn.repetitivas;
+ package com.learn.repetitivas;
 
 import java.util.Scanner;
 
