@@ -22,7 +22,7 @@ public class Ejercicio5 {
     }
     public static String format(Number n) {
         NumberFormat format = DecimalFormat.getInstance();
-        format.setRoundingMode(RoundingMode.FLOOR);
+        //format.setRoundingMode(RoundingMode.FLOOR);
         format.setMinimumFractionDigits(0);
         format.setMaximumFractionDigits(2);
         return format.format(n);
