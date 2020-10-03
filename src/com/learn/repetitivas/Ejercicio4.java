@@ -1,40 +1,40 @@
 package com.learn.repetitivas;
 
+import java.util.Scanner;
+
 public class Ejercicio4 {
-    //) Dada una serie de números reales, determinar el valor máximo, el mı́nimo
-    // y las posiciones en que éstos se encontraban
-    //en la serie. El programa deberá ir preguntando si hay más números para ingresar
 
     public static void main(String[] args) {
+        //) Dada una serie de números reales, determinar el valor máximo, el mı́nimo
+        // y las posiciones en que éstos se encontraban
+        //en la serie. El programa deberá ir preguntando si hay más números para ingresar
 
-        double [] numerosReales = {9.90, 23.78, 12.80, 101.62, 45.67, 3.40, 245.70, 30.34};
+        double[] numerosReales = new double[5];
+
+        Scanner miScanner = new Scanner(System.in);
+
+        for (int i = 0; i < numerosReales.length; i++) {
+            System.out.printf("Introduzca número %d: ", i + 1);
+            numerosReales[i] = miScanner.nextDouble();
+        }
         double maximo = numerosReales[0];
         double minimo = numerosReales[0];
+        int firstPosicion = 0, secondPosicion=0;
 
-
-        for (int i = 1; i < numerosReales.length; i++) {
-            if (numerosReales[i]>maximo){
+        for (int i = 0; i < numerosReales.length; i++) {
+            if (numerosReales[i] > maximo) {
                 maximo = numerosReales[i];
+                firstPosicion=i;
             }
-
         }
-        for (int i = 1; i < numerosReales.length; i++) {
-            if (numerosReales[i]<minimo){
+        for (int i = 0; i < numerosReales.length; i++) {
+            if (numerosReales[i] < minimo) {
                 minimo = numerosReales[i];
+                secondPosicion=i;
             }
-
         }
-
-
-        System.out.println(maximo);
-        System.out.println(minimo);
+        System.out.println("El numero maximo ingresado es: " + maximo + " Y su posicion es la: "+firstPosicion);
+        System.out.println("El numero minimo ingresado es: " + minimo + " Y su posicion es la: "+secondPosicion);
     }
-
-
-
-
-
-
-
 
 }
