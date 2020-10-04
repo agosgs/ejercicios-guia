@@ -13,8 +13,8 @@ public class Ejercicio6 {
         int numeroB = miScanner.nextInt();
         int numeroC = 0;
 
-        for (int i = 0; i <= numeroB ; i++) {
-            numeroC = numeroA + numeroA;
+        for (int i = 1; i <=numeroB ; i++) {
+            numeroC = numeroC + numeroA;
         }
 
         System.out.println("El resultado es: "+numeroC);

@@ -10,14 +10,15 @@ public class Ejercicio7 {
     public static void main(String[] args) {
 
         Scanner miScanner = new Scanner(System.in);
-        
         System.out.println("Por favor, ingrese dos numeros enteros: ");
         int numeroA = miScanner.nextInt(); 
         int numeroB = miScanner.nextInt();
-        int C = 1;
+        double numeroC = 1;
 
         for (int i = 0; i <=numeroB; i++) {
-            
+            numeroC = numeroA*numeroA;
         }
+
+        System.out.println("El resultado es: "+numeroC);
     }
 }
