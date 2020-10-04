@@ -15,8 +15,8 @@ public class Ejercicio7 {
         int numeroB = miScanner.nextInt();
         double numeroC = 1;
 
-        for (int i = 0; i <=numeroB; i++) {
-            numeroC = numeroA*numeroA;
+        for (int i = 1; i <=numeroB; i++) {
+            numeroC = numeroC*numeroA;
         }
 
         System.out.println("El resultado es: "+numeroC);
