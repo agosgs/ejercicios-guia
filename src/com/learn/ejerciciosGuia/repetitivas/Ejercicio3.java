@@ -1,4 +1,4 @@
-package com.learn.repetitivas;
+package com.learn.ejerciciosGuia.repetitivas;
 
 public class Ejercicio3 {
     public static void main(String[] args) {

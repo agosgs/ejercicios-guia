@@ -1,6 +1,5 @@
-package com.learn.selectivas;
+package com.learn.ejerciciosGuia.selectivas;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Scanner;

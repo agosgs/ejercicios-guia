@@ -1,4 +1,4 @@
-package com.learn.selectivas;
+package com.learn.ejerciciosGuia.selectivas;
 
 public class Ejercicio5bis {
 
