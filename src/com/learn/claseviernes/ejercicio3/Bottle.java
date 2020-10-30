@@ -1,30 +1,42 @@
 package com.learn.claseviernes.ejercicio3;
 
-public class Botella {
+public class Bottle {
 
-    private Contenido contenido;
+    private Content content;
     private Material material;
-    private int capacidad;
+    private int capacity;
 
-    public Contenido getContenido() {
-        return contenido;
+    public Bottle(int capacity, Material material){
+        this.capacity = capacity;
+        this.material = material;
+        this.content = Content.NO_CONTENT;
+    }
+    public Bottle(int capacity, Material materialP, Content content){
+        this.material = materialP;
+        this.capacity = capacity;
+        this.content = content;
+    }
+
+    public Bottle (){
+        this.material = Material.VIDRIO;
+        this.capacity = 2;
+        this.content=Content.NO_CONTENT;
+    }
+
+    public Content getContent() {
+        return content;
     }
 
     public Material getMaterial() {
         return material;
     }
 
-    public String getCapacidad() {
-        return capacidad + " litros" ;
-    }
-    private void setContenido(Contenido contenido){
-        this.contenido = Contenido.AGUA;
+    public String getCapacity() {
+        return capacity + " litros" ;
     }
 
-    private void setMaterial(Material material){
-        this.material = Material.VIDRIO;
+    public void setContent(Content contenido){
+        this.content = contenido;
     }
-    private void setCapacidad (int capacidad){
-        this.capacidad = 1;
-    }
+
 }
